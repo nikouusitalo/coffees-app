@@ -1,7 +1,26 @@
 .card-list {
     width: 85vw;
     margin: 0 auto;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     }
+    h1 {color: #ffc400;}
+    @media only screen and (max-width: 600px) { 
+        .card-list {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        
+        }
+         } 
+        
+         @media only screen and (min-width: 768px) {
+            .card-list {
+                display: grid; 
+                grid-template-columns: 1fr 1fr 1fr; 
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+                width: 100%;
+            }
+         }

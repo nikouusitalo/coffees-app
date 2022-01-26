@@ -1,6 +1,7 @@
-import react from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './search-box.component.css'
 
-export const SearchBox = ({placeholder, handleChange}) => (  <input className="search" type='search' placeholder={placeholder} onChange={handleChange}
+
+export const SearchBox = ({placeholder, handleChange}) => (  <input className="search form-control " type='search' placeholder={placeholder} onChange={handleChange}
       
       />)

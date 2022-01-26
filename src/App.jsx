@@ -41,11 +41,9 @@ class App extends Component {
     
     return (
       <div className='App'>
-      <CardList coffees={filteredCoffees}>
-      
-      </CardList>
-      <SearchBox placeholder='Search coffee' handleChange={(e) => this.setState({ searchField: e.target.value })}>
-      </SearchBox>
+      <h1 className='heading'>Hae Kahvia☕</h1>
+      <SearchBox placeholder='Haku' handleChange={(e) => this.setState({ searchField: e.target.value })}/>
+      <CardList coffees={filteredCoffees}/>
       </div>
     );
   }
